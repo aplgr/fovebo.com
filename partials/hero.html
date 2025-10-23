@@ -1,98 +1,48 @@
-<section id="hero" class="hero section dark-background">
-
-    <div id="hero-carousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
-
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-            <div class="carousel-container">
-                <h2 class="animate__animated animate__fadeInDown">Willkommen bei <span>Fovebo</span></h2>
-                <p class="animate__animated animate__fadeInUp">
-                    Freelance Operations für smarte Selbstständige: Webauftritt, Cloud-Tools, Automatisierung & mehr –
-                    alles
-                    aus einer Hand, speziell für Solo-Unternehmer.
-                </p>
-                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Mehr erfahren</a>
+<section id="hero" class="hero section">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row content align-items-center">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                <h1 class="mb-3">Fovebo - Reliable Engineering</h1>
+                <p class="lead mb-3"> Keep your critical systems stable while you evolve them safely. We plan clearly,
+                    deliver predictably, and measure what matters. </p>
+                <p class="mb-4"> If modernization keeps stalling — because capacity is tight, risks feel opaque, or
+                    releases keep surprising people — we help you move forward safely. No big-bang rewrites: just small,
+                    reversible steps with tidy interfaces, measurable effects, and transparent communication. You get
+                    predictable delivery now and a clear path to modernize further without disrupting your core
+                    business. </p>
+                <div class="cta-buttons d-flex gap-2" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#services" class="btn btn-primary w-50">Our Services</a>
+                    <a href="#contact" class="btn btn-primary w-50">Get in touch</a>
+                </div>
+                <div class="hero-stats d-flex gap-4 mt-4 flex-wrap" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-item">
+                        <span class="stat-number h3 d-block">15+</span>
+                        <span class="stat-label text-muted">Years of Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number h3 d-block">30+</span>
+                        <span class="stat-label text-muted">Projects Modernized</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number h3 d-block">100%</span>
+                        <span class="stat-label text-muted">Focus on Maintainability</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-2 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+                <picture>
+                    <source
+                            srcset="/assets/img/profile/hero-fovebo.webp 768w, /assets/img/profile/hero-fovebo.webp 1280w"
+                            type="image/webp" />
+                    <img
+                         class="img-fluid rounded-3 shadow-sm"
+                         src="/assets/img/profile/hero-fovebo.webp"
+                         width="1280" height="960"
+                         alt="FOVEBO — Software Engineering Company"
+                         loading="eager" decoding="async" fetchpriority="high"
+                         sizes="(min-width: 1200px) 540px, 100vw" />
+                </picture>
             </div>
         </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-            <div class="carousel-container">
-                <h2 class="animate__animated animate__fadeInDown">Dein <span>professioneller Webauftritt</span></h2>
-                <p class="animate__animated animate__fadeInUp">
-                    Persönliche Website, Domain, Hosting & E-Mail – perfekt abgestimmt auf Freelancer, Coaches und
-                    Solo-Selbstständige. Auch als Landingpage für Produkte oder Kurse.
-                </p>
-                <a href="#services" class="btn-get-started animate__animated animate__fadeInUp scrollto">Web-Paket
-                    ansehen</a>
-            </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="carousel-item">
-            <div class="carousel-container">
-                <h2 class="animate__animated animate__fadeInDown">Dein <span>virtuelles Büro</span></h2>
-                <p class="animate__animated animate__fadeInUp">
-                    Private Cloud mit NextCloud, Terminbuchung, Zeiterfassung, Projektplanung & Finanztools – alles
-                    DSGVO-konform, alles unter deiner Kontrolle.
-                </p>
-                <a href="#cloud" class="btn-get-started animate__animated animate__fadeInUp scrollto">Cloud-Lösungen
-                    entdecken</a>
-            </div>
-        </div>
-
-        <!-- Slide 4 -->
-        <div class="carousel-item">
-            <div class="carousel-container">
-                <h2 class="animate__animated animate__fadeInDown">Mehr <span>Sichtbarkeit mit LinkedIn</span></h2>
-                <p class="animate__animated animate__fadeInUp">
-                    Wir helfen dir beim Aufbau eines starken LinkedIn-Profils, zeigen dir passende Content-Strategien
-                    und
-                    unterstützen dich beim Einstieg in organisches Marketing.
-                </p>
-                <a href="#socialmedia"
-                    class="btn-get-started animate__animated animate__fadeInUp scrollto">Profil-Booster
-                    starten</a>
-            </div>
-        </div>
-
-        <!-- Slide 5 -->
-        <div class="carousel-item">
-            <div class="carousel-container">
-                <h2 class="animate__animated animate__fadeInDown"><span>Mehr Zeit</span> durch Automatisierung</h2>
-                <p class="animate__animated animate__fadeInUp">
-                    Nutze ChatGPT, Miro und smarte Tools in deinem Alltag. Unsere Kurse und Integrationen zeigen dir,
-                    wie du
-                    deine Prozesse automatisierst und dich auf das Wesentliche konzentrierst.
-                </p>
-                <a href="#kurse" class="btn-get-started animate__animated animate__fadeInUp scrollto">Kurse ansehen</a>
-            </div>
-        </div>
-
-        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-        </a>
-
-        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-        </a>
-
     </div>
-
-    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28 " preserveAspectRatio="none">
-        <defs>
-            <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
-        </defs>
-        <g class="wave1">
-            <use xlink:href="#wave-path" x="50" y="3"></use>
-        </g>
-        <g class="wave2">
-            <use xlink:href="#wave-path" x="50" y="0"></use>
-        </g>
-        <g class="wave3">
-            <use xlink:href="#wave-path" x="50" y="9"></use>
-        </g>
-    </svg>
-
 </section>

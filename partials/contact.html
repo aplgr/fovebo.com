@@ -1,78 +1,75 @@
-<section id="contact" class="contact section">
-
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Contact Us</p>
-    </div><!-- End Section Title -->
-
-    <div class="container" data-aos="fade" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-            <div class="col-lg-4">
-                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                    <i class="bi bi-geo-alt flex-shrink-0"></i>
-                    <div>
-                        <h3>Address</h3>
-                        <p>A108 Adam Street, New York, NY 535022</p>
+<section id="contact" class="contact section light-background">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-5">
+            <div class="col-lg-6">
+                <div class="content" data-aos="fade-up" data-aos-delay="200">
+                    <div class="section-category mb-3">Contact</div>
+                    <h2 class="display-5 mb-4"> Ready to collaborate?<br /> Let’s talk. </h2>
+                    <p class="lead mb-4"> Share a brief context—idea or project. We usually reply the same business day
+                        with a clear next step. </p>
+                    <div class="contact-info mt-5">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="info-item d-flex mb-3">
+                                    <i class="bi bi-envelope-at me-3"></i>
+                                    <a x-data="{u:'hello', d:'fovebo.com', s:'Contact via Website'}"
+                                       x-text="`${u}@${d}`" :href="`mailto:${u}@${d}?subject=${encodeURIComponent(s)}`"
+                                       rel="noopener noreferrer nofollow">Show Email</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <!--
+                                <div class="info-item d-flex mb-3">
+                                    <i class="bi bi-linkedin me-3"></i>
+                                    <a href="https://www.linkedin.com/in/fovebo" target="_blank"
+                                       rel="noopener noreferrer nofollow">LinkedIn</a>
+                                </div>
+                                -->
+                            </div>
+                        </div>
                     </div>
-                </div><!-- End Info Item -->
-
-                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                    <i class="bi bi-telephone flex-shrink-0"></i>
-                    <div>
-                        <h3>Call Us</h3>
-                        <p>+1 5589 55488 55</p>
-                    </div>
-                </div><!-- End Info Item -->
-
-                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                    <i class="bi bi-envelope flex-shrink-0"></i>
-                    <div>
-                        <h3>Email Us</h3>
-                        <p>info@example.com</p>
-                    </div>
-                </div><!-- End Info Item -->
-
+                </div>
             </div>
-
-            <div class="col-lg-8">
-                <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-                    data-aos-delay="200">
-                    <div class="row gy-4">
-
-                        <div class="col-md-6">
-                            <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                        </div>
-
-                        <div class="col-md-6 ">
-                            <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                        </div>
-
-                        <div class="col-md-12">
-                            <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                        </div>
-
-                        <div class="col-md-12">
-                            <textarea class="form-control" name="message" rows="6" placeholder="Message"
-                                required=""></textarea>
-                        </div>
-
-                        <div class="col-md-12 text-center">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                            <button type="submit">Send Message</button>
-                        </div>
-
+            <div class="col-lg-6">
+                <div class="contact-form card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-body p-4 p-lg-5">
+                        <form x-data="formGuard()" x-init="init()" hx-post="https://api.fovebo.com/contact"
+                              hx-ext="json-enc" hx-encoding="json" hx-swap="none"
+                              hx-disabled-elt="button[type=submit], input[type=submit]"
+                              @htmx:configRequest="configRequest($event)" @htmx:beforeRequest="beforeRequest($event)"
+                              @htmx:afterRequest="afterRequest($event)" @htmx:sendError="sendError($event)" action=""
+                              method="post" class="email-form">
+                            <div class="row gy-4">
+                                <div class="col-12">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name"
+                                           required>
+                                </div>
+                                <div class="col-12">
+                                    <input type="email" name="email" class="form-control"
+                                           placeholder="Your Email address" required>
+                                </div>
+                                <div style="position:absolute; left:-5000px" aria-hidden="true">
+                                    <label>Website <input type="text" name="website" autocomplete="off"
+                                               tabindex="-1"></label>
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" name="subject" class="form-control" placeholder="Subject"
+                                           required>
+                                </div>
+                                <div class="col-12">
+                                    <textarea name="message" class="form-control" rows="6" placeholder="Your Message"
+                                              required></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <input type="hidden" name="_elapsed_ms">
+                                    <button type="submit" class="btn btn-submit w-100">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                        <p class="form-status" x-data x-text="$store.fg.status" role="status" aria-live="polite"></p>
                     </div>
-                </form>
+                </div>
             </div>
-
         </div>
-
     </div>
-
 </section>

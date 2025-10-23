@@ -1,115 +1,83 @@
 <section id="faq" class="faq section">
-    <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
         <h2>Frequently Asked Questions</h2>
-        <p>Answers to the most common questions</p>
-    </div><!-- End Section Title -->
-
-    <div class="container" data-aos="fade-up">
-        <div class="row">
-            <div class="col-12">
-                <div class="custom-accordion" id="accordion-faq">
-
-                    <div class="accordion-item">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapse-faq-1" aria-expanded="true" aria-controls="collapse-faq-1">
-                                How do I download and register?
-                            </button>
-                        </h2>
-
-                        <div id="collapse-faq-1" class="collapse show" aria-labelledby="headingOne"
-                            data-parent="#accordion-faq">
-                            <div class="accordion-body">
-                                You can download our app from the official website or your app store. After downloading,
-                                simply open
-                                the app and follow the registration process by entering your email and creating a
-                                password. A
-                                confirmation email will be sent to verify your account.
-                            </div>
+        <div class="title-shape">
+            <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor"
+                      stroke-width="2"></path>
+            </svg>
+        </div>
+        <p>Quick answers about collaboration, billing, and practicalities.</p>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+                <div class="faq-container">
+                    <div class="faq-item faq-active">
+                        <h3>Where do you work from and how does collaboration look like?</h3>
+                        <div class="faq-content">
+                            <p> We work fully remote with clients in the EU and beyond. Communication is in English
+                                (German possible). We align on priorities in short cycles and deliver via tickets/PRs
+                                with clear acceptance criteria. <br /><br />
+                                <i class="bi bi-geo-alt me-1"></i>Time zones: PY / EU · <i
+                                   class="bi bi-clock-history me-1"></i>Typical response: same business day
+                            </p>
                         </div>
-                    </div><!-- .accordion-item -->
-
-                    <div class="accordion-item">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapse-faq-2" aria-expanded="false" aria-controls="collapse-faq-2">
-                                How do I create a PayPal account?
-                            </button>
-                        </h2>
-
-                        <div id="collapse-faq-2" class="collapse" aria-labelledby="headingTwo"
-                            data-parent="#accordion-faq">
-                            <div class="accordion-body">
-                                To create a PayPal account, go to paypal.com and click on "Sign Up". Choose between a
-                                personal or
-                                business account, enter your details, and link a valid email address. Follow the
-                                instructions to
-                                verify your identity and you’re ready to send or receive payments.
-                            </div>
+                        <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How does billing work?</h3>
+                        <div class="faq-content">
+                            <p> Invoices are issued by <strong>Fovebo LLC (Florida, USA)</strong>.<br />We can invoice
+                                in <strong>USD</strong> (default) or <strong>EUR</strong> upon agreement.<br />Standard
+                                payment terms are <strong>Net 14 – 30</strong>. </p>
                         </div>
-                    </div><!-- .accordion-item -->
-
-                    <div class="accordion-item">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapse-faq-3" aria-expanded="false" aria-controls="collapse-faq-3">
-                                How do I link my PayPal account to my bank account?
-                            </button>
-                        </h2>
-
-                        <div id="collapse-faq-3" class="collapse" aria-labelledby="headingThree"
-                            data-parent="#accordion-faq">
-                            <div class="accordion-body">
-                                After logging into your PayPal account, go to the "Wallet" section and select "Link a
-                                bank account".
-                                Enter your bank details and confirm the account by verifying the small deposits PayPal
-                                sends to your
-                                bank. This process usually takes 1-2 business days.
-                            </div>
+                        <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Security and confidentiality?</h3>
+                        <div class="faq-content">
+                            <p> We work under NDA when required. Access follows your standards (VPN/SSO/SSH keys). We
+                                keep credentials out of code, rotate tokens, and avoid production data on local machines
+                                unless explicitly approved. </p>
                         </div>
-                    </div><!-- .accordion-item -->
-
-                    <div class="accordion-item">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapse-faq-4" aria-expanded="false" aria-controls="collapse-faq-4">
-                                What payment methods do you accept?
-                            </button>
-                        </h2>
-
-                        <div id="collapse-faq-4" class="collapse" aria-labelledby="headingFour"
-                            data-parent="#accordion-faq">
-                            <div class="accordion-body">
-                                We accept all major credit and debit cards, PayPal, and bank transfers. For subscription
-                                plans,
-                                payments are processed securely via our payment gateway with encryption to ensure your
-                                data’s
-                                safety.
-                            </div>
+                        <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What does a typical start look like?</h3>
+                        <div class="faq-content">
+                            <p><strong>1)</strong> Short discovery call<br />
+                                <strong>2)</strong> Access & priorities<strong><br /> 3)</strong> First delivery within
+                                the agreed scope.<br /><br /> We keep it lightweight and transparent from day one.
+                            </p>
                         </div>
-                    </div><!-- .accordion-item -->
-
-                    <div class="accordion-item">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapse-faq-5" aria-expanded="false" aria-controls="collapse-faq-5">
-                                Can I upgrade or cancel my subscription anytime?
-                            </button>
-                        </h2>
-
-                        <div id="collapse-faq-5" class="collapse" aria-labelledby="headingFive"
-                            data-parent="#accordion-faq">
-                            <div class="accordion-body">
-                                Yes, you can upgrade, downgrade, or cancel your subscription anytime through your
-                                account settings.
-                                Changes will take effect at the start of the next billing cycle. We also offer prorated
-                                refunds if
-                                applicable.
-                            </div>
+                        <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do you only do modernization, or also maintenance?</h3>
+                        <div class="faq-content">
+                            <p> Both. We stabilize what runs today (bug fixes, performance, DB care) and prepare the
+                                path forward (clean interfaces, stepwise migration to Go-based services). </p>
                         </div>
-                    </div><!-- .accordion-item -->
-
+                        <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Where are your prices?</h3>
+                        <div class="faq-content">
+                            <p> Projects differ, so we quote individually. Share your context-scope, timeline,
+                                constraints - and we'll provide a clear proposal with scope, timelines, and commercials.
+                                - Transparent terms, no hidden fees.</p>
+                        </div>
+                        <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can we just talk first?</h3>
+                        <div class="faq-content">
+                            <p> Absolutely. Send a short message with your context, and we’ll schedule a 30-minute call
+                                to see if we’re a fit. </p>
+                        </div>
+                        <i class="faq-toggle bi bi-chevron-right" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
         </div>
