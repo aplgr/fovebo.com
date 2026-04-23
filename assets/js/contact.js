@@ -1,9 +1,29 @@
+function safeTrackUmami(eventName, payload) {
+  if (typeof window.trackUmami === 'function') {
+    window.trackUmami(eventName, payload);
+    return;
+  }
+
+  if (!eventName || !window.umami || typeof window.umami.track !== 'function') {
+    return;
+  }
+
+  if (payload && Object.keys(payload).length > 0) {
+    window.umami.track(eventName, payload);
+    return;
+  }
+
+  window.umami.track(eventName);
+}
+
 document.addEventListener('alpine:init', () => {
   Alpine.store('fg', { status: '' });
 
   Alpine.data('formGuard', () => ({
     start: 0,
     lastElapsed: 0,
+    requestPending: false,
+    resultTracked: false,
 
     init() {
       this.start = Date.now();
@@ -13,6 +33,9 @@ document.addEventListener('alpine:init', () => {
       this.$el.addEventListener('submit', () => {
         const elapsed = Math.max(1, Date.now() - this.start);
         this.lastElapsed = elapsed;
+        this.requestPending = true;
+        this.resultTracked = false;
+        safeTrackUmami('contact_form_submit');
         const hidden = this.$el.querySelector('input[name=\"_elapsed_ms\"]');
         if (hidden) hidden.value = String(elapsed);
       }, { capture: true });
@@ -56,22 +79,35 @@ document.addEventListener('alpine:init', () => {
       try { data = JSON.parse(xhr.responseText || ''); } catch { }
       if (xhr.status >= 200 && xhr.status < 300 && data && data.ok) {
         this.setState('sent');
+        this.finalizeTracking('contact_form_success');
         this.$el.reset();
         this.start = Date.now();
         this.lastElapsed = 0;
       } else {
         this.setState('error');
+        this.finalizeTracking('contact_form_error');
       }
     },
 
     sendError(e) {
       if (e.target !== this.$el) return;
       this.setState('error');
+      this.finalizeTracking('contact_form_error');
     },
 
     // visual state for CSS fallbacks
     setState(state) {
       this.$el.setAttribute('data-status', state || 'idle');
+    },
+
+    finalizeTracking(eventName) {
+      if (!this.requestPending || this.resultTracked) {
+        return;
+      }
+
+      safeTrackUmami(eventName);
+      this.resultTracked = true;
+      this.requestPending = false;
     },
   }));
 });
