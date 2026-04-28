@@ -50,6 +50,12 @@ This repository is the **developer’s view** of the Fovebo website.
 - Lean assets, SEO-friendly meta tags (OG/Twitter), structured data (JSON-LD)  
 - Works well on GitHub Pages or any static host
 
+## Development
+
+Install tracked frontend dependencies with `npm install`.
+
+Vendor files are committed for static hosting. After dependency updates, run `npm run vendor:sync` and test the site locally before committing the refreshed `assets/vendor/...` files.
+
 ---
 
 ## Contact
@@ -66,6 +72,6 @@ https://www.linkedin.com/in/andreploeger/
 
 - **Code** in this repo: **MIT** (see [`LICENSE`](./LICENSE))  
 - **Text/images/brand**: **All Rights Reserved** (see non-code section in `LICENSE`)  
-- Third-party components: see [`THIRD_PARTY_LICENSE.md`](./THIRD_PARTY_LICENSE.md)
+- Third-party components: see [`THIRD_PARTY_LICENSES.md`](./THIRD_PARTY_LICENSES.md)
 
 > This repo is a working surface. The site is intentionally lean - so we can focus on what matters: **results**.
