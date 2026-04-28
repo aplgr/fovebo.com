@@ -13,7 +13,7 @@
     "htmx.org": "^1.9.12",
     "imagesloaded": "^5.0.0",
     "isotope-layout": "^3.0.6",
-    "swiper": "^11.2.10",
+    "swiper": "^12.1.2",
     "waypoints": "^4.0.1"
   }
 }
