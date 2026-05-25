@@ -212,9 +212,50 @@
   /**
    * Navmenu Scrollspy
    */
-  let navmenulinks = document.querySelectorAll('.navmenu a');
+  function normalizeNavPath(pathname) {
+    if (!pathname || pathname === '/index.html') {
+      return '/';
+    }
+
+    return pathname.replace(/\/index\.html$/, '/');
+  }
+
+  function navLinkMatchesCurrentPath(link, currentPath) {
+    const url = new URL(link.getAttribute('href'), window.location.origin);
+
+    if (url.hash) {
+      return false;
+    }
+
+    return normalizeNavPath(url.pathname) === currentPath;
+  }
+
+  function navmenuCurrentPageActive() {
+    const currentPath = normalizeNavPath(window.location.pathname);
+
+    if (currentPath === '/') {
+      return;
+    }
+
+    const navmenulinks = document.querySelectorAll('.navmenu a');
+    const hasCurrentPageLink = Array.from(navmenulinks).some(link => navLinkMatchesCurrentPath(link, currentPath));
+
+    if (!hasCurrentPageLink) {
+      return;
+    }
+
+    navmenulinks.forEach(link => {
+      link.classList.toggle('active', navLinkMatchesCurrentPath(link, currentPath));
+    });
+  }
 
   function navmenuScrollspy() {
+    if (normalizeNavPath(window.location.pathname) !== '/') {
+      return;
+    }
+
+    const navmenulinks = document.querySelectorAll('.navmenu a');
+
     navmenulinks.forEach(navmenulink => {
       if (!navmenulink.hash) return;
       let section = document.querySelector(navmenulink.hash);
@@ -230,5 +271,10 @@
   }
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
+  window.addEventListener('load', navmenuCurrentPageActive);
+  document.addEventListener('htmx:afterSwap', function () {
+    navmenuCurrentPageActive();
+    navmenuScrollspy();
+  });
 
 })();

@@ -1491,6 +1491,85 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Working Model Section
+--------------------------------------------------------------*/
+.working-model {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.working-model .working-model-kicker {
+  font-family: var(--heading-font);
+  font-size: .9rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.working-model .working-model-summary p {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  line-height: 1.7;
+}
+
+.working-model .trust-item {
+  background-color: var(--surface-color);
+  padding: 1rem;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+  border-radius: .75rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  height: 100%;
+}
+
+.working-model .trust-item i {
+  font-size: 1.75rem;
+  color: var(--accent-color);
+  display: inline-block;
+}
+
+.working-model .trust-item h3 {
+  font-size: 1.1rem;
+  margin-bottom: .25rem;
+}
+
+.working-model .trust-item p {
+  font-size: .95rem;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  margin-bottom: 0;
+}
+
+.working-model .cta-buttons .btn {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: .75rem;
+  transition: all 0.3s ease;
+}
+
+.working-model .cta-buttons .btn.btn-primary {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.working-model .cta-buttons .btn.btn-primary:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 15%);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 575.98px) {
+  .working-model {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .working-model .cta-buttons .btn {
+    width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
 # Faq Section
 --------------------------------------------------------------*/
 .faq .faq-container .faq-item {
@@ -1830,6 +1909,45 @@ section,
 .service-details .content p {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin-bottom: 15px;
+}
+
+.working-with-fovebo-page .content .lead {
+  color: color-mix(in srgb, var(--default-color), transparent 15%);
+  line-height: 1.7;
+}
+
+.working-with-fovebo-page .working-intro {
+  background: color-mix(in srgb, var(--accent-color), transparent 94%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 82%);
+  border-radius: .75rem;
+  padding: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.working-with-fovebo-page .working-detail-section {
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+}
+
+.working-with-fovebo-page .working-detail-section-last {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+.working-with-fovebo-page .content h2 {
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin-bottom: .75rem;
+}
+
+.working-with-fovebo-page .content ul {
+  color: color-mix(in srgb, var(--default-color), transparent 18%);
+  padding-left: 1.25rem;
+}
+
+.working-with-fovebo-page .content li {
+  margin-bottom: .45rem;
 }
 
 .service-details .content .features .feature-box {
