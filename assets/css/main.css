@@ -1950,6 +1950,239 @@ section,
   margin-bottom: .45rem;
 }
 
+.terms-page {
+  padding-top: 4rem;
+}
+
+.terms-page .terms-content {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.terms-page .terms-intro {
+  background: color-mix(in srgb, var(--accent-color), transparent 94%);
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 82%);
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.terms-page .terms-intro p {
+  color: color-mix(in srgb, var(--default-color), transparent 15%);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.terms-page .terms-intro .terms-version {
+  color: var(--heading-color);
+  font-weight: 700;
+  margin-bottom: .35rem;
+}
+
+.terms-page .terms-intro .terms-note {
+  margin-top: .75rem;
+}
+
+.terms-language-switch {
+  align-items: center;
+  display: inline-flex;
+  gap: .35rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.terms-language-switch a,
+.terms-language-switch span {
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 82%);
+  border-radius: 999px;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .45rem .75rem;
+}
+
+.terms-language-switch span {
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+.terms-language-switch a {
+  background: var(--surface-color);
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.terms-language-switch a:hover {
+  border-color: color-mix(in srgb, var(--accent-color), transparent 60%);
+  color: var(--accent-color);
+}
+
+.legal-content {
+  background: var(--surface-color);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+  border-radius: 8px;
+  padding: 2.5rem;
+  line-height: 1.72;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.04);
+}
+
+.legal-content .terms-document-header {
+  border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+  margin-bottom: 2rem;
+  padding-bottom: 1.25rem;
+}
+
+.legal-content .terms-document-header h2 {
+  margin-top: 0;
+  margin-bottom: .35rem;
+}
+
+.legal-content .terms-document-header p {
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  margin-bottom: 0;
+}
+
+.legal-content h2 {
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin-top: 2.25rem;
+  margin-bottom: .9rem;
+}
+
+.legal-content h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-top: 1.6rem;
+  margin-bottom: .75rem;
+}
+
+.legal-content p,
+.legal-content li {
+  color: color-mix(in srgb, var(--default-color), transparent 16%);
+}
+
+.legal-content p {
+  margin-bottom: .75rem;
+}
+
+.legal-content .terms-clause,
+.legal-content .terms-subclause {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  column-gap: .65rem;
+  margin-bottom: .7rem;
+}
+
+.legal-content .terms-subclause {
+  grid-template-columns: 2rem 1fr;
+  margin-left: 3rem;
+}
+
+.legal-content .terms-marker {
+  color: var(--heading-color);
+  font-weight: 500;
+}
+
+.legal-content .terms-annex-label {
+  color: var(--accent-color);
+  font-family: var(--heading-font);
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: .25rem;
+}
+
+.legal-content .terms-appendix-list {
+  color: color-mix(in srgb, var(--default-color), transparent 16%);
+  margin: 0 0 1.4rem;
+  padding-left: 1.5rem;
+}
+
+.legal-content .terms-appendix-list li {
+  margin-bottom: .5rem;
+  padding-left: .25rem;
+}
+
+.legal-content .terms-table-wrap {
+  margin: 1rem 0 1.5rem;
+}
+
+.legal-content .terms-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.legal-content .terms-table td {
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 86%);
+  color: color-mix(in srgb, var(--default-color), transparent 15%);
+  padding: .75rem;
+  vertical-align: top;
+}
+
+.legal-content .terms-table td>p {
+  margin-bottom: 0;
+}
+
+.legal-content .terms-table td>p+p {
+  margin-top: .35rem;
+}
+
+.legal-content .terms-table td:first-child>p:first-child {
+  color: var(--heading-color);
+  font-weight: 600;
+}
+
+.legal-content .terms-optional-modules {
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+}
+
+.legal-content .terms-module-list {
+  display: grid;
+  gap: .85rem;
+  list-style: none;
+  margin: 1.25rem 0 0;
+  padding: 0;
+}
+
+.legal-content .terms-module-list li {
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+  border-radius: 8px;
+  padding: .95rem 1rem;
+}
+
+.legal-content .terms-module-list strong,
+.legal-content .terms-module-list span {
+  display: block;
+}
+
+.legal-content .terms-module-list strong {
+  color: var(--heading-color);
+  margin-bottom: .25rem;
+}
+
+@media (max-width: 767px) {
+  .terms-page {
+    padding-top: 2.5rem;
+  }
+
+  .legal-content {
+    padding: 1.25rem;
+  }
+
+  .legal-content .terms-clause {
+    grid-template-columns: 2.4rem 1fr;
+  }
+
+  .legal-content .terms-subclause {
+    grid-template-columns: 2rem 1fr;
+    margin-left: .75rem;
+  }
+
+  .legal-content .terms-table td {
+    padding: .65rem;
+  }
+}
+
 .service-details .content .features .feature-box {
   padding: 20px;
   background: var(--surface-color);
