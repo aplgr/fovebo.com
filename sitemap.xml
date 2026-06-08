@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://fovebo.com/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <loc>https://fovebo.com/en/</loc>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://fovebo.com/working-with-fovebo/</loc>
-    <lastmod>2026-05-25</lastmod>
+    <loc>https://fovebo.com/de/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://fovebo.com/en/working-with-fovebo/</loc>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fovebo.com/terms/</loc>
-    <lastmod>2026-06-05</lastmod>
+    <loc>https://fovebo.com/de/working-with-fovebo/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fovebo.com/en/terms/</loc>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://fovebo.com/terms/de/</loc>
-    <lastmod>2026-06-05</lastmod>
+    <loc>https://fovebo.com/de/terms/</loc>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://fovebo.com/legal-notice.html</loc>
-    <lastmod>2025-09-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://fovebo.com/privacy-policy.html</loc>
-    <lastmod>2025-09-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.4</priority>
   </url>
 </urlset>

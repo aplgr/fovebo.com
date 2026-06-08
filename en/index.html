@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fovebo · PostgreSQL Performance & Reliable Backend Engineering</title>
+  <meta name="description"
+        content="Fovebo improves PostgreSQL performance, stabilizes mature backends, and builds practical software: APIs, integrations, modernization, and product foundations for tools and SaaS.">
+  <meta name="keywords"
+        content="Fovebo, Fovebo LLC, PostgreSQL performance, query tuning, backend engineering, software delivery, legacy modernization, Perl, Go, APIs, integrations, SaaS product engineering, MVP development, database tuning, query optimization, refactoring, Docker, CI/CD, remote engineering">
+  <meta name="robots" content="index,follow">
+  <meta name="author" content="Fovebo LLC">
+  <link rel="canonical" href="https://fovebo.com/en/">
+  <link rel="alternate" hreflang="en" href="https://fovebo.com/en/">
+  <link rel="alternate" hreflang="de" href="https://fovebo.com/de/">
+  <link rel="alternate" hreflang="x-default" href="https://fovebo.com/en/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Fovebo">
+  <meta property="og:title" content="PostgreSQL Performance & Reliable Backend Engineering">
+  <meta property="og:description"
+        content="Practical engineering for PostgreSQL-heavy systems, stable backends, APIs, integrations, modernization, and product foundations for tools and SaaS.">
+  <meta property="og:url" content="https://fovebo.com/en/">
+  <meta property="og:image" content="https://fovebo.com/assets/img/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PostgreSQL Performance & Reliable Backend Engineering">
+  <meta name="twitter:description" content="PostgreSQL performance, stable backends, APIs, integrations, and practical modernization for tools and SaaS.">
+  <meta name="twitter:image" content="https://fovebo.com/assets/img/og-cover.png">
+  <link rel="icon" href="/assets/img/favicon.ico" sizes="any">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/img/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/assets/img/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/assets/img/android-chrome-192x192.png" sizes="192x192" type="image/png">
+  <link rel="icon" href="/assets/img/android-chrome-512x512.png" sizes="512x512" type="image/png">
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="5bc5a6d3-98d2-403c-88f5-8ee617d2c567"></script>
+  <script defer src="/assets/js/umami-events.js"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/toast.css">
+  <script src="/assets/vendor/htmx/htmx.min.js"></script>
+  <script src="/assets/vendor/htmx/ext/json-enc.js"></script>
+  <script defer src="/assets/vendor/alpinejs/cdn.min.js"></script>
+  <script src="/assets/js/toast.js"></script>
+  <script src="/assets/js/contact.js" type="text/javascript"></script>
+  <script src="/assets/js/contact-toasts.js"></script>
+  <!--
+  <div hx-get="/partials/styles.html" hx-trigger="load" hx-swap="outerHTML"></div>
+  -->
+  <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/vendor/bootstrap-icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="/assets/vendor/aos/aos.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Fovebo LLC",
+    "url":"https://fovebo.com",
+    "logo":"https://fovebo.com/assets/img/logo.webp",
+    "sameAs": [],
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"7901 4TH ST N STE 300",
+      "addressLocality":"St. Petersburg",
+      "addressRegion":"FL",
+      "postalCode":"33702",
+      "addressCountry":"US"
+    }
+  }
+  </script>
+</head>
+
+<body class="index-page preload">
+  <div hx-get="/partials/en/header.html" hx-trigger="load" hx-swap="outerHTML"></div>
+  <main class="main">
+    <div hx-get="/partials/en/hero.html" hx-trigger="load" hx-swap="outerHTML"></div>
+    <div hx-get="/partials/en/services.html" hx-trigger="load" hx-swap="outerHTML"></div>
+    <div hx-get="/partials/en/remote-collaboration.html" hx-trigger="load" hx-swap="outerHTML"></div>
+    <div hx-get="/partials/en/team.html" hx-trigger="load" hx-swap="outerHTML"></div>
+    <div hx-get="/partials/en/faq.html" hx-trigger="load" hx-swap="outerHTML"></div>
+    <div hx-get="/partials/en/contact.html" hx-trigger="load" hx-swap="outerHTML"></div>
+  </main>
+  <div hx-get="/partials/en/footer.html" hx-trigger="load" hx-swap="outerHTML"></div>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"
+     data-umami-event="scroll_top_click">
+    <i class="bi bi-arrow-up-short" aria-hidden="true"></i>
+    <span class="visually-hidden">Back to top</span>
+  </a>
+  <!--
+    <div hx-get="/partials/footer-scripts.html" hx-trigger="load" hx-swap="outerHTML"></div>
+  -->
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/aos/aos.js" defer></script>
+  <script src="/assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.body.style.visibility = "visible";
+      if (window.AOS) AOS.init({ once: true });
+    });
+  </script>
+</body>
+
+</html>

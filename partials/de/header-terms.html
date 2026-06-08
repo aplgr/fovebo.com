@@ -1,7 +1,7 @@
 <header id="header" class="header d-flex align-items-center sticky-top">
     <div
          class="header-container container-fluid container-xl position-relative align-items-center justify-content-between">
-        <a href="/en/" class="logo d-flex align-items-center me-auto me-xl-0">
+        <a href="/de/" class="logo d-flex align-items-center me-auto me-xl-0">
             <img src="/assets/img/logo.webp" width="802" height="194" alt="fovebo logo">
             <!-- <h1 class="sitename">fovebo</h1> -->
         </a>
@@ -12,13 +12,17 @@
                     if (t) { t.classList.add('bi-list'); t.classList.remove('bi-x'); }
                 }">
             <ul>
-                <li><a href="/en/#hero" class="active" data-umami-event="nav_home_click">Home</a></li>
-                <li><a href="/en/#services" data-umami-event="nav_services_click">Services</a></li>
-                <li><a href="/en/working-with-fovebo/" data-umami-event="nav_how_we_work_click">How we work</a></li>
-                <li><a href="/en/#team" data-umami-event="nav_team_click">Team</a></li>
-                <li><a href="/en/#faq" data-umami-event="nav_faq_click">FAQ</a></li>
+                <li><a href="/de/#hero" data-umami-event="nav_home_click">Home</a></li>
+                <li><a href="/de/#services" data-umami-event="nav_services_click">Leistungen</a></li>
+                <li><a href="/de/working-with-fovebo/" data-umami-event="nav_how_we_work_click">Zusammenarbeit</a></li>
+                <li><a href="/de/#team" data-umami-event="nav_team_click">Team</a></li>
+                <li><a href="/de/#faq" data-umami-event="nav_faq_click">FAQ</a></li>
+                <li class="nav-language-switch" aria-label="Sprache">
+                    <a href="/en/terms/" lang="en">English</a>
+                    <span lang="de" aria-current="true">Deutsch</span>
+                </li>
                 <li class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
-                    <a href="/en/#contact" class="btn btn-primary" data-umami-event="nav_contact_click">Contact</a>
+                    <a href="/de/#contact" class="btn btn-primary" data-umami-event="nav_contact_click">Kontakt</a>
                 </li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list" hx-on:click="

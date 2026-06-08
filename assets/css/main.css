@@ -276,6 +276,36 @@ h6 {
     color: var(--nav-hover-color);
   }
 
+  .navmenu .nav-language-switch {
+    align-items: center;
+    display: flex;
+    gap: .35rem;
+    padding: 0 10px;
+  }
+
+  .navmenu .nav-language-switch a,
+  .navmenu .nav-language-switch span {
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 82%);
+    border-radius: 999px;
+    color: color-mix(in srgb, var(--nav-color), transparent 15%);
+    font-family: var(--nav-font);
+    font-size: .85rem;
+    line-height: 1;
+    padding: .35rem .6rem;
+    white-space: nowrap;
+  }
+
+  .navmenu .nav-language-switch span {
+    background: color-mix(in srgb, var(--accent-color), transparent 90%);
+    color: var(--heading-color);
+    font-weight: 600;
+  }
+
+  .navmenu .nav-language-switch a:hover {
+    border-color: color-mix(in srgb, var(--accent-color), transparent 60%);
+    color: var(--accent-color);
+  }
+
   .navmenu .dropdown ul {
     margin: 0;
     padding: 10px 0;
@@ -403,6 +433,37 @@ h6 {
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-dropdown-hover-color);
+  }
+
+  .navmenu .nav-language-switch {
+    align-items: center;
+    display: flex;
+    gap: .35rem;
+    padding: 10px 20px;
+  }
+
+  .navmenu .nav-language-switch a,
+  .navmenu .nav-language-switch span {
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 82%);
+    border-radius: 999px;
+    color: color-mix(in srgb, var(--nav-dropdown-color), transparent 15%);
+    font-family: var(--nav-font);
+    font-size: .9rem;
+    font-weight: 500;
+    line-height: 1;
+    padding: .45rem .7rem;
+    white-space: nowrap;
+  }
+
+  .navmenu .nav-language-switch span {
+    background: color-mix(in srgb, var(--accent-color), transparent 90%);
+    color: var(--heading-color);
+    font-weight: 600;
+  }
+
+  .navmenu .nav-language-switch a:hover {
+    border-color: color-mix(in srgb, var(--accent-color), transparent 60%);
+    color: var(--accent-color);
   }
 
   .navmenu .active i,
@@ -1981,39 +2042,6 @@ section,
 
 .terms-page .terms-intro .terms-note {
   margin-top: .75rem;
-}
-
-.terms-language-switch {
-  align-items: center;
-  display: inline-flex;
-  gap: .35rem;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.terms-language-switch a,
-.terms-language-switch span {
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 82%);
-  border-radius: 999px;
-  font-size: .9rem;
-  line-height: 1;
-  padding: .45rem .75rem;
-}
-
-.terms-language-switch span {
-  background: color-mix(in srgb, var(--accent-color), transparent 90%);
-  color: var(--heading-color);
-  font-weight: 600;
-}
-
-.terms-language-switch a {
-  background: var(--surface-color);
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-}
-
-.terms-language-switch a:hover {
-  border-color: color-mix(in srgb, var(--accent-color), transparent 60%);
-  color: var(--accent-color);
 }
 
 .legal-content {

@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule ^$ /en/ [R=301,L]
+RewriteRule ^working-with-fovebo/?$ /en/working-with-fovebo/ [R=301,L]
+RewriteRule ^working-with-fovebo/de/?$ /de/working-with-fovebo/ [R=301,L]
+RewriteRule ^terms/?$ /en/terms/ [R=301,L]
+RewriteRule ^terms/de/?$ /de/terms/ [R=301,L]
