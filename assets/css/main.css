@@ -279,31 +279,36 @@ h6 {
   .navmenu .nav-language-switch {
     align-items: center;
     display: flex;
-    gap: .35rem;
-    padding: 0 10px;
+    gap: .25rem;
+    margin-left: .35rem;
+    padding-left: .35rem;
   }
 
   .navmenu .nav-language-switch a,
   .navmenu .nav-language-switch span {
-    border: 1px solid color-mix(in srgb, var(--default-color), transparent 82%);
-    border-radius: 999px;
-    color: color-mix(in srgb, var(--nav-color), transparent 15%);
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    color: color-mix(in srgb, var(--nav-color), transparent 35%);
     font-family: var(--nav-font);
-    font-size: .85rem;
+    font-size: .78rem;
+    font-weight: 400;
     line-height: 1;
-    padding: .35rem .6rem;
+    padding: 0;
     white-space: nowrap;
   }
 
-  .navmenu .nav-language-switch span {
-    background: color-mix(in srgb, var(--accent-color), transparent 90%);
-    color: var(--heading-color);
-    font-weight: 600;
+  .navmenu .nav-language-switch span[aria-current="true"] {
+    color: var(--nav-color);
+    font-weight: 500;
   }
 
   .navmenu .nav-language-switch a:hover {
-    border-color: color-mix(in srgb, var(--accent-color), transparent 60%);
     color: var(--accent-color);
+  }
+
+  .navmenu .nav-language-switch .language-separator {
+    color: color-mix(in srgb, var(--nav-color), transparent 55%);
   }
 
   .navmenu .dropdown ul {
@@ -438,32 +443,35 @@ h6 {
   .navmenu .nav-language-switch {
     align-items: center;
     display: flex;
-    gap: .35rem;
+    gap: .25rem;
     padding: 10px 20px;
   }
 
   .navmenu .nav-language-switch a,
   .navmenu .nav-language-switch span {
-    border: 1px solid color-mix(in srgb, var(--default-color), transparent 82%);
-    border-radius: 999px;
-    color: color-mix(in srgb, var(--nav-dropdown-color), transparent 15%);
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    color: color-mix(in srgb, var(--nav-dropdown-color), transparent 35%);
     font-family: var(--nav-font);
-    font-size: .9rem;
-    font-weight: 500;
+    font-size: .85rem;
+    font-weight: 400;
     line-height: 1;
-    padding: .45rem .7rem;
+    padding: 0;
     white-space: nowrap;
   }
 
-  .navmenu .nav-language-switch span {
-    background: color-mix(in srgb, var(--accent-color), transparent 90%);
-    color: var(--heading-color);
-    font-weight: 600;
+  .navmenu .nav-language-switch span[aria-current="true"] {
+    color: var(--nav-dropdown-color);
+    font-weight: 500;
   }
 
   .navmenu .nav-language-switch a:hover {
-    border-color: color-mix(in srgb, var(--accent-color), transparent 60%);
     color: var(--accent-color);
+  }
+
+  .navmenu .nav-language-switch .language-separator {
+    color: color-mix(in srgb, var(--nav-dropdown-color), transparent 55%);
   }
 
   .navmenu .active i,
